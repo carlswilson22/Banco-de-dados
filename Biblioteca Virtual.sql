@@ -1,9 +1,6 @@
-
 CREATE DATABASE literatura_brasileira;
 
-
 USE literatura_brasileira;
-
 
 CREATE TABLE autores (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,14 +8,12 @@ CREATE TABLE autores (
     genero VARCHAR(50) NOT NULL
 );
 
-
 CREATE TABLE livros (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
     ano_publicacao INT NOT NULL,
     autor_id INT
 );
-
 
 INSERT INTO autores (nome, genero) VALUES 
 ('Machado de Assis', 'Romance'),
@@ -34,7 +29,6 @@ INSERT INTO livros (titulo, ano_publicacao, autor_id) VALUES
 ('Alguma Poesia', 1930, 3),
 ('Budapeste', 2003, 4),
 ('O Sítio do Picapau Amarelo', 1920, 5);
-
 
 SELECT a.nome AS autor, a.genero, l.titulo AS livro, l.ano_publicacao
 FROM autores a
