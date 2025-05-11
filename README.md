@@ -8,4 +8,3 @@
 
 <h1>Mercado </h1>
 <p>Mercado virtual que possui alimentos de diversos tipos.</p>
-
