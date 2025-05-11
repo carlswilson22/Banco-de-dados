@@ -1,10 +1,7 @@
--- Criar o banco de dados
 CREATE DATABASE mercado_virtual;
 
--- Selecionar o banco de dados
 USE mercado_virtual;
 
--- Criar a tabela de produtos
 CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -12,7 +9,6 @@ CREATE TABLE produtos (
     tipo VARCHAR(50) NOT NULL
 );
 
--- Inserir 8 produtos alimentícios no mercado virtual
 INSERT INTO produtos (nome, preco, tipo) VALUES 
 ('Arroz', 19.99, 'Alimento'),
 ('Feijão', 7.99, 'Alimento'),
