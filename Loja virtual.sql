@@ -1,15 +1,14 @@
--- Criação do banco de dados
 CREATE DATABASE loja;
--- Seleciona o banco para usar
+
 USE loja;
--- Criação da tabela sem AUTO_INCREMENT
+
 CREATE TABLE produto (
     id_produto INT PRIMARY KEY,
     nome_produto VARCHAR(100),
     preco DECIMAL(10,2),
     categoria VARCHAR(50)
 );
--- Inserção dos dados com ID manual
+
 INSERT INTO produto (id_produto, nome_produto, preco, categoria) VALUES 
 (1, 'Samsung S24', 3299.90, 'Eletronicos'),
 (2, 'Fone de ouvido Bluetooth JBL', 250.00, 'Eletronicos'),
